@@ -1,0 +1,108 @@
+$header: 'Press Start 2P', cursive;
+$font: 'IBM Plex Mono', monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: $font;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: $header;
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+h2, h3 {
+  margin: 1em 0;
+}
+
+a {
+  color: lime;
+  font-family: $header;
+  font-size: 0.8em;
+}
+
+#wrap {
+  max-width: 800px;
+  padding: 1em;
+}
+
+img#top {
+  max-width: 400px;
+  margin-top: 1.5em;
+}
+
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  li {
+    margin-left: 2em;
+    list-style-type: none;
+    &:before {
+      content: "-";
+      margin-right: 1em;
+    }
+  }
+}
+
+#updates {
+  background: red;
+  padding: 1em;
+  margin-top: 2em;
+  h2 {
+    margin-top: 0;
+    font-family: $header;
+    font-size: 1em;
+  }
+  input {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    font-family: $header;
+    background: white;
+    border: 0;
+  }
+  input[type=email] {
+    margin-bottom: 1em;
+  }
+  input[type=submit] {
+    background: black;
+    color: white;
+    padding: 1em;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  border-top: 1px solid white;
+  > img {
+    height: 5em;
+  }
+  a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    img {
+      height: 3em;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.25em;
+  }
+}

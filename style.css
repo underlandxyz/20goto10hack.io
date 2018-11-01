@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+h2, h3 {
+  margin: 1em 0;
+}
+
+a {
+  color: lime;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8em;
+}
+
+#wrap {
+  max-width: 800px;
+  padding: 1em;
+}
+
+img#top {
+  max-width: 400px;
+  margin-top: 1.5em;
+}
+
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul li {
+  margin-left: 2em;
+  list-style-type: none;
+}
+
+ul li:before {
+  content: "-";
+  margin-right: 1em;
+}
+
+#updates {
+  background: red;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+#updates h2 {
+  margin-top: 0;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+}
+
+#updates input {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: "Press Start 2P", cursive;
+  background: white;
+  border: 0;
+}
+
+#updates input[type=email] {
+  margin-bottom: 1em;
+}
+
+#updates input[type=submit] {
+  background: black;
+  color: white;
+  padding: 1em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  border-top: 1px solid white;
+}
+
+footer > img {
+  height: 5em;
+}
+
+footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer a img {
+  height: 3em;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.25em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
