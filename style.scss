@@ -25,9 +25,7 @@ h2, h3 {
 }
 
 a {
-  color: lime;
-  font-family: $header;
-  font-size: 0.8em;
+  color: #00ff00;
 }
 
 #wrap {
@@ -53,6 +51,27 @@ ul {
   }
 }
 
+#sponsors {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  a {
+    background: white;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+iframe {
+  margin-left: -10px !important;
+  margin-right: 0 !important; 
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+}
+
 #updates {
   background: red;
   padding: 1em;
@@ -66,7 +85,7 @@ ul {
     width: 100%;
     padding: 0.5em;
     font-size: 1em;
-    font-family: $header;
+    font-family: $font;
     background: white;
     border: 0;
   }
@@ -87,7 +106,7 @@ footer {
   align-items: center;
   margin-bottom: 1em;
   padding-top: 2em;
-  border-top: 1px solid white;
+  margin-top: 2em;
   > img {
     height: 5em;
   }
@@ -104,5 +123,8 @@ footer {
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 1.25em;
+  }
+  #sponsors {
+    grid-template-columns: 1fr 1fr;
   }
 }
