@@ -60,27 +60,19 @@
       <li>retro games consoles for our break-out space</li>
     </ul>
 
-    <script
-  src="https://www.universe.com/embed2.js"
-  data-widget-type="universe-ticket"
-  data-target-type="Listing"
-  data-target-id="20-goto-10-hackathon-tickets-X8RKGQ"
-  data-state="buttonColor=#000000&buttonText=Get Tickets" >
-</script>
-
     <p>If you can provide any of these, please contact the webmaster at <a href="mailto:20goto10@underland.events">20goto10@underland.events</a></p>
 
-    <h2>Register</h2>
+    <script src="https://www.universe.com/embed2.js" data-widget-type="universe-ticket" data-target-type="Listing" data-target-id="20-goto-10-hackathon-tickets-X8RKGQ" data-state="buttonColor=#000000&buttonText=Get Tickets"></script>
 
-    <form action="https://xyz.us18.list-manage.com/subscribe/post?u=434691fcaa2096849818903d2&amp;id=e887703dac" method="post" id="updates" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <h2>Sign-up for the mailing list</h2>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail address">
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input type="text" name="b_434691fcaa2096849818903d2_e887703dac" tabindex="-1" value="">
-      </div>
-      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-    </form>
-
+    <div id="updates">
+      <h2>Sign-up for the Underland Events mailing list</h2>
+      <form id="inputs">
+        <input type="text" placeholder="First name" id='first' required>
+        <input type="text" placeholder="Last name" id='last' required>
+        <input type="email" placeholder="E-mail address" id='email' required>
+        <input type="submit" value='Subscribe' id='submit'>
+      </form>
+    </div>
     <footer>
       <img src="logo.svg" alt="20 GOTO 10 Logo">
       <a href="https://underland.events">
@@ -88,5 +80,18 @@
       </a>
     </footer>
   </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    document.querySelector("#submit").addEventListener("click", event => {
+      event.preventDefault();
+      const first = document.querySelector('#first').value;
+      const last = document.querySelector('#last').value;
+      const email = document.querySelector('#email').value;
+      axios.post('https://20goto10hack.io/.netlify/functions/mailing-list', JSON.stringify({first, last, email})).then(() => {
+        document.querySelector("#inputs").innerHTML('<p>Thank you! You are subscribed.</p>');
+      })
+    }, false);
+  </script>
 </body>
 </html>

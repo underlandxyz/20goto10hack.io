@@ -86,6 +86,7 @@ iframe {
   margin-top: 0;
   font-family: "Press Start 2P", cursive;
   font-size: 1em;
+  margin-bottom: 0;
 }
 
 #updates input {
@@ -95,6 +96,7 @@ iframe {
   font-family: "IBM Plex Mono", monospace;
   background: white;
   border: 0;
+  margin-top: 1em;
 }
 
 #updates input[type=email] {
