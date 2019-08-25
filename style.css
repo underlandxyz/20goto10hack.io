@@ -112,10 +112,6 @@ iframe {
   margin-top: 1em;
 }
 
-#updates input[type=email] {
-  margin-bottom: 1em;
-}
-
 #updates input[type=submit] {
   background: black;
   color: white;
