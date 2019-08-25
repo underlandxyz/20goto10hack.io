@@ -14,6 +14,19 @@ body {
   line-height: 1.5;
 }
 
+.unii-listing-button {
+  background: #ff0000;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  display: block;
+  width: 100%;
+  position: fixed;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 h1 {
   font-family: $header;
   margin: 1em 0;
@@ -31,6 +44,7 @@ a {
 #wrap {
   max-width: 800px;
   padding: 1em;
+  padding-top: 4em;
 }
 
 img#top {
