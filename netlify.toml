@@ -1,3 +1,2 @@
 [build]
-  functions = "lambda"
-  Command = "netlify-lambda build functions"
+  functions = "./functions"
