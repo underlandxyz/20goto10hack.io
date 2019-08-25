@@ -1,0 +1,19 @@
+{
+  "name": "20goto10hack.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underlandxyz/20goto10hack.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.7.1",
+    "axios": "^0.19.0"
+  }
+}
