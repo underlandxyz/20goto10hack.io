@@ -109,6 +109,7 @@ iframe {
   font-family: "IBM Plex Mono", monospace;
   background: white;
   border: 0;
+  margin-top: 1em;
 }
 
 #updates input[type=email] {
