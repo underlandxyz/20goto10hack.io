@@ -89,7 +89,7 @@
       const last = document.querySelector('#last').value;
       const email = document.querySelector('#email').value;
       axios.post('https://20goto10hack.io/.netlify/functions/mailing-list', JSON.stringify({first, last, email})).then(() => {
-        document.querySelector("#inputs").innerHTML('<p>Thank you! You are subscribed.</p>');
+        document.querySelector("#inputs").innerHTML = '<p>Thank you! You are subscribed.</p>';
       })
     }, false);
   </script>
